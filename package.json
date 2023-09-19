@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "db:push": "dotenv drizzle-kit push:mysql",
+    "db:push": "dotenv drizzle-kit push:sqlite",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
@@ -17,6 +17,7 @@
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
+    "better-sqlite3": "^8.6.0",
     "drizzle-orm": "^0.28.5",
     "next": "^13.4.19",
     "react": "18.2.0",
