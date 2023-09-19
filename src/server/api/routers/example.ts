@@ -10,7 +10,7 @@ export const exampleRouter = createTRPCRouter({
         greeting: `Hello ${input.text}`,
       };
     }),
-  getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.db.query.example.findMany();
+  getAll: publicProcedure.query(() => {
+    // return ctx.db.query.example.findMany();
   }),
 });
