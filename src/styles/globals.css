@@ -6,3 +6,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+#__next {
+  overflow-x: hidden;
+}
