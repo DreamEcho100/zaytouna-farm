@@ -12,7 +12,7 @@ import {
   generalAnimationIntersectionObserverCB,
   useInitGeneralAnimationIntersectionObserver,
 } from "~/components/utils";
-import { type IconType } from "react-icons";
+import { type IconType, type IconBaseProps } from "react-icons";
 
 const socialLinks: {
   children: { type: "icon"; Icon: IconType; props?: IconBaseProps };
