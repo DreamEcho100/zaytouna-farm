@@ -53,7 +53,7 @@ const socialLinks: {
   },
   {
     title: "whatsapp",
-    href: "tel:+201281238888",
+    href: "https://wa.me/201281238888",
     children: {
       type: "icon",
       Icon: IoLogoWhatsapp,
@@ -77,7 +77,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="fixed inset-x-0 z-10 bg-white/20 backdrop-blur-[1px]">
-        <div className="item-center h-main-header-h max-w-main mx-auto flex items-center justify-between gap-4 px-8 font-medium">
+        <div className="item-center mx-auto flex h-main-header-h max-w-main items-center justify-between gap-4 px-8 font-medium">
           <Link href="/" title="home">
             <Image
               src="/images/Screen_Shot_2023-09-15_at_12.38.49_PM-removebg-preview.png"
@@ -106,7 +106,7 @@ export default function Home() {
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 h-full w-full bg-black/30" />
-          <div className="max-w-main relative mx-auto flex h-full w-full items-center justify-center text-center">
+          <div className="relative mx-auto flex h-full w-full max-w-main items-center justify-center text-center">
             <div className="relative flex w-11/12 flex-col gap-8 rounded-lg bg-black/10 px-8 py-16 text-xl">
               <h1 className="text-5xl">
                 مرحبًا بك في مزرعة الزيتون &ldquo;زيتونة&rdquo;
@@ -125,12 +125,12 @@ export default function Home() {
         <section className="bg-white text-slate-900">
           <div
             className={clsx(
-              "max-w-main mx-auto flex gap-8 px-16 pb-12 pt-36",
+              "mx-auto flex max-w-main gap-8 px-16 pb-12 pt-36",
               "flex-col items-center justify-center lg:flex-row lg:justify-between",
             )}
           >
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 جودة زيت الزيتون فائقة
               </h2>
               <div className="flex flex-col gap-1">
@@ -188,7 +188,7 @@ export default function Home() {
         <section className="bg-white text-slate-900">
           <div
             className={clsx(
-              "max-w-main mx-auto flex gap-8 px-16 pb-36 pt-16",
+              "mx-auto flex max-w-main gap-8 px-16 pb-36 pt-16",
               "flex-col items-center justify-center lg:flex-row lg:justify-between",
             )}
           >
@@ -228,7 +228,7 @@ export default function Home() {
               ))}
             </div>
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 أعلى كفائة
               </h2>
               <p className="max-w-[424px] leading-relaxed">
@@ -254,7 +254,7 @@ export default function Home() {
           <div className="absolute inset-0 h-full w-full bg-black/50 sm:bg-black/25" />
           <div
             className={clsx(
-              "max-w-main relative mx-auto flex h-full w-full items-center px-16 py-36",
+              "relative mx-auto flex h-full w-full max-w-main items-center px-16 py-36",
               "justify-center lg:justify-end",
             )}
           >
@@ -274,7 +274,7 @@ export default function Home() {
                   "hidden sm:block",
                 )}
               />
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 محاصيل متنوعة
               </h2>
               <p className="max-w-[424px] leading-relaxed">
@@ -289,12 +289,12 @@ export default function Home() {
         <section className="bg-white text-slate-900" id="product-sample">
           <div
             className={clsx(
-              "max-w-main mx-auto flex gap-8 px-16 py-36",
+              "mx-auto flex max-w-main gap-8 px-16 py-36",
               "flex-col items-center justify-center lg:flex-row lg:items-start lg:justify-between",
             )}
           >
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 منتجاتنا
               </h2>
             </article>
@@ -308,7 +308,7 @@ export default function Home() {
                 (item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className="bg-special-primary-500 flex w-full max-w-[20rem] flex-col gap-2 overflow-hidden rounded-xl bg-opacity-5"
+                    className="flex w-full max-w-[20rem] flex-col gap-2 overflow-hidden rounded-xl bg-special-primary-500 bg-opacity-5"
                   >
                     <div className="aspect-[9/16] h-[20rem] w-full overflow-hidden">
                       <Image
@@ -346,7 +346,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="bg-special-primary-500">
-        <div className="max-w-main mx-auto flex items-center justify-between px-8 py-4">
+        <div className="mx-auto flex max-w-main items-center justify-between px-8 py-4">
           <Link href="/" title="home">
             <Image
               src="/images/Screen_Shot_2023-09-15_at_12.38.49_PM-removebg-preview.png"
