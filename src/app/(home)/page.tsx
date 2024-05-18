@@ -117,7 +117,7 @@ export default function Home() {
             )}
           >
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 جودة زيت الزيتون فائقة
               </h2>
               <div className="flex flex-col gap-1">
@@ -216,7 +216,7 @@ export default function Home() {
               ))}
             </div>
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 أعلى كفائة
               </h2>
               <p className="max-w-[424px] leading-relaxed">
@@ -262,7 +262,7 @@ export default function Home() {
                 data-intersection-observer-on-intersect-remove="scale-[0.05]"
                 data-intersection-observer-unobserve-after-intersect={true}
               >
-                <h2 className="border-b-special-primary-500 border-b-[0.25rem] pb-4 text-4xl sm:w-fit">
+                <h2 className="border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl sm:w-fit">
                   محاصيل متنوعة
                 </h2>
                 <p className="max-w-[424px] leading-relaxed">
@@ -286,7 +286,7 @@ export default function Home() {
             )}
           >
             <article className="flex flex-col gap-6 text-xl">
-              <h2 className="border-b-special-primary-500 w-fit border-b-[0.25rem] pb-4 text-4xl">
+              <h2 className="w-fit border-b-[0.25rem] border-b-special-primary-500 pb-4 text-4xl">
                 منتجاتنا
               </h2>
             </article>
@@ -299,7 +299,7 @@ export default function Home() {
               {[
                 {
                   src: "/images/new/11.jpeg",
-                  title: "زيتون دولس",
+                  title: "زيتون دولسي",
                   description:
                     " مخلل علي الطريقة الفليسطينية محفوظ بالزيت الزيتون و الليمون بدون مواد حافظة ٧٥٠ ملي لتر و سعره ١٠٠",
                 },
@@ -312,7 +312,7 @@ export default function Home() {
               ].map((item, itemIndex) => (
                 <div
                   key={itemIndex}
-                  className="bg-special-primary-500 flex w-full max-w-[20rem] flex-col gap-2 overflow-hidden rounded-xl bg-opacity-5"
+                  className="flex w-full max-w-[20rem] flex-col gap-2 overflow-hidden rounded-xl bg-special-primary-500 bg-opacity-5"
                 >
                   <div className="aspect-[9/16] h-[20rem] w-full overflow-hidden">
                     <Img
