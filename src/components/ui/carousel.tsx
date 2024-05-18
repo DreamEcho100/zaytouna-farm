@@ -200,72 +200,62 @@ CarouselItem.displayName = "CarouselItem";
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(
-  (
-    { className, variant = "dark-clear-resin", size = "icon", ...props },
-    ref,
-  ) => {
-    const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
-    return (
-      <Button
-        ref={ref}
-        variant={variant}
-        size={size}
-        data-orientation={orientation ?? "horizontal"}
-        className={cn(
-          "absolute  size-7 scale-110 rounded-full",
-          "flex items-center justify-center",
-          "data-[orientation=vertical]:-top-12 data-[orientation=vertical]:left-1/2 data-[orientation=vertical]:-translate-x-1/2 data-[orientation=vertical]:rotate-90",
-          "data-[orientation=horizontal]:-left-0 data-[orientation=horizontal]:top-1/2 data-[orientation=horizontal]:-translate-y-1/2 data-[orientation=horizontal]:translate-x-3.5",
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      data-orientation={orientation ?? "horizontal"}
+      className={cn(
+        "absolute  size-7 scale-110 rounded-full",
+        "flex items-center justify-center",
+        "data-[orientation=vertical]:-top-12 data-[orientation=vertical]:left-1/2 data-[orientation=vertical]:-translate-x-1/2 data-[orientation=vertical]:rotate-90",
+        "data-[orientation=horizontal]:-left-0 data-[orientation=horizontal]:top-1/2 data-[orientation=horizontal]:-translate-y-1/2 data-[orientation=horizontal]:translate-x-3.5",
 
-          className,
-        )}
-        disabled={!canScrollPrev}
-        onClick={scrollPrev}
-        {...props}
-      >
-        <ChevronLeft className="h-4 w-4" />
-        <span className="sr-only">Previous slide</span>
-      </Button>
-    );
-  },
-);
+        className,
+      )}
+      disabled={!canScrollPrev}
+      onClick={scrollPrev}
+      {...props}
+    >
+      <ChevronLeft className="h-4 w-4" />
+      <span className="sr-only">Previous slide</span>
+    </Button>
+  );
+});
 CarouselPrevious.displayName = "CarouselPrevious";
 
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(
-  (
-    { className, variant = "dark-clear-resin", size = "icon", ...props },
-    ref,
-  ) => {
-    const { orientation, scrollNext, canScrollNext } = useCarousel();
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollNext, canScrollNext } = useCarousel();
 
-    return (
-      <Button
-        ref={ref}
-        variant={variant}
-        size={size}
-        data-orientation={orientation ?? "horizontal"}
-        className={cn(
-          "absolute size-7 scale-110 rounded-full",
-          "flex items-center justify-center",
-          "data-[orientation=vertical]:-bottom-12 data-[orientation=vertical]:left-1/2 data-[orientation=vertical]:-translate-x-1/2 data-[orientation=vertical]:rotate-90",
-          "data-[orientation=horizontal]:right-0 data-[orientation=horizontal]:top-1/2 data-[orientation=horizontal]:-translate-x-3.5 data-[orientation=horizontal]:-translate-y-1/2",
-          className,
-        )}
-        disabled={!canScrollNext}
-        onClick={scrollNext}
-        {...props}
-      >
-        <ChevronRight className="h-4 w-4" />
-        <span className="sr-only">Next slide</span>
-      </Button>
-    );
-  },
-);
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      data-orientation={orientation ?? "horizontal"}
+      className={cn(
+        "absolute size-7 scale-110 rounded-full",
+        "flex items-center justify-center",
+        "data-[orientation=vertical]:-bottom-12 data-[orientation=vertical]:left-1/2 data-[orientation=vertical]:-translate-x-1/2 data-[orientation=vertical]:rotate-90",
+        "data-[orientation=horizontal]:right-0 data-[orientation=horizontal]:top-1/2 data-[orientation=horizontal]:-translate-x-3.5 data-[orientation=horizontal]:-translate-y-1/2",
+        className,
+      )}
+      disabled={!canScrollNext}
+      onClick={scrollNext}
+      {...props}
+    >
+      <ChevronRight className="h-4 w-4" />
+      <span className="sr-only">Next slide</span>
+    </Button>
+  );
+});
 CarouselNext.displayName = "CarouselNext";
 
 const CarouselPagination = React.forwardRef<
@@ -301,7 +291,7 @@ const CarouselPagination = React.forwardRef<
         ?.scrollSnapList()
         .map((snap, index) => (
           <Button
-            variant="dark-clear-resin"
+            variant="outline"
             key={index}
             title={`Go to slide ${index + 1}`}
             className={cn(
