@@ -89,6 +89,22 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        //
+
+        special: {
+          primary: {
+            100: "rgba(var(--color-special-primary-100) / <alpha-value>)",
+            200: "rgba(var(--color-special-primary-200) / <alpha-value>)",
+            300: "rgba(var(--color-special-primary-300) / <alpha-value>)",
+            400: "rgba(var(--color-special-primary-400) / <alpha-value>)",
+            500: "rgba(var(--color-special-primary-500) / <alpha-value>)",
+            600: "rgba(var(--color-special-primary-600) / <alpha-value>)",
+            700: "rgba(var(--color-special-primary-700) / <alpha-value>)",
+            800: "rgba(var(--color-special-primary-800) / <alpha-value>)",
+            900: "rgba(var(--color-special-primary-900) / <alpha-value>)",
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -111,20 +127,6 @@ const config = {
       },
 
       //
-
-      special: {
-        primary: {
-          100: "rgba(var(--color-special-primary-100) / <alpha-value>)",
-          200: "rgba(var(--color-special-primary-200) / <alpha-value>)",
-          300: "rgba(var(--color-special-primary-300) / <alpha-value>)",
-          400: "rgba(var(--color-special-primary-400) / <alpha-value>)",
-          500: "rgba(var(--color-special-primary-500) / <alpha-value>)",
-          600: "rgba(var(--color-special-primary-600) / <alpha-value>)",
-          700: "rgba(var(--color-special-primary-700) / <alpha-value>)",
-          800: "rgba(var(--color-special-primary-800) / <alpha-value>)",
-          900: "rgba(var(--color-special-primary-900) / <alpha-value>)",
-        },
-      },
       spacing: {
         "main-header-h": "var(--main-header-h)",
       },
