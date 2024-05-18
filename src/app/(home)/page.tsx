@@ -9,7 +9,7 @@ import { type IconType, type IconBaseProps } from "react-icons";
 import { clsx as cn } from "~/utils";
 import { UseInitGeneralAnimationIntersectionObserver } from "~/components/use-init-general-animation-intersection-observer";
 import Img from "~/components/img";
-import ShowCaseCarousel from "./_components/show-case-carousel";
+// import ShowCaseCarousel from "./_components/show-case-carousel";
 
 const socialLinks: {
   children: { type: "icon"; Icon: IconType; props?: IconBaseProps };
